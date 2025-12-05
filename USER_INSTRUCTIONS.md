@@ -1,64 +1,57 @@
-# Getting Started: The Research Hub
+# Research Hub: User Guide
 
-**Welcome.** This guide will help you set up a professional, AI-powered research environment on your computer.
-
-Follow these 3 simple steps to begin.
-
----
-
-## Step 1: Create Your Workspace
-Before opening your AI tool, you need a designated space for your projects.
-
-1.  Go to your Documents or Desktop.
-2.  Create a **New Folder**.
-3.  Name it: `Research_Workspace` (or any name you prefer).
+**Welcome.** This guide is split into two phases:
+1.  **Setup:** Do this only once to install the Hub.
+2.  **Generator:** Do this every time you start a new project.
 
 ---
 
-## Step 2: Open Your AI Editor
-**Recommended Tools:** [Windsurf](https://codeium.com/windsurf), [Cursor](https://cursor.sh/), or VS Code.
+## 🛑 PHASE 1: ONE-TIME SETUP
+*Perform this step only once on your computer.*
 
-1.  Open the application.
-2.  **CRITICAL:** Click **"Open Folder"** (or `File > Open Folder`).
-3.  Select the empty `Research_Workspace` folder you created in Step 1.
+1.  Create a folder named `Research_Workspace` in your Documents.
+2.  Open your AI Editor (Windsurf/Cursor) and **Open Folder** -> `Research_Workspace`.
+3.  Paste the **INSTALLER PROMPT** below:
 
----
-
-## Step 3: Activate the Architect
-Now you will bring the Research Hub into your workspace.
-
-1.  Open the AI Chat panel (e.g., "Cascade" or "Chat").
-2.  **Copy and Paste** the following prompt into the chat:
-
+### 🛠️ The Installer Prompt
 ```text
-# RESEARCH AGENT BOOTSTRAP PROTOCOL
+**Role:** System Administrator
+**Task:** Install the Research Hub repository.
 
-**Role:** You are an expert Research Infrastructure Architect.
-**Objective:** Initialize a professional research environment by deploying a standardized template from the Research Hub repository.
-
-**PHASE 1: ACQUISITION**
-1. Access the Research Hub repository here: [https://github.com/Prophet60191/Research-hub](https://github.com/Prophet60191/Research-hub)
-2. If you have terminal access, run: `git clone https://github.com/Prophet60191/Research-hub "Research Hub"`
-3. If you cannot clone, browse the repository URL directly to identify the available templates.
-
-**PHASE 2: SELECTION**
-1. Analyze the `Templates/` directory in the repo.
-2. Present the available research templates to me (e.g., "Dataset Analysis" or "Argument Map") with a 1-sentence summary of each.
-3. Ask me: "Which template would you like to initialize, and what should we name this project?"
-
-**PHASE 3: DEPLOYMENT**
-Once I select a template and provide a name:
-1. Copy the entire contents of the selected template folder (e.g., `Research Hub/Templates/Dataset_Analysis_Template/`) into a NEW directory named `[Project Name]`.
-2. Do NOT modify the original `Research Hub/` folder (keep it as a master copy).
-3. Verify the new folder contains the core instruction file: `AI_INSTRUCTIONS.md`.
-
-**PHASE 4: HANDOVER**
-1. Read the `AI_INSTRUCTIONS.md` file inside the NEW project folder carefully.
-2. Adopt the persona and strict standards defined in that file.
-3. Signal you are ready by saying: "Project [Name] initialized. I have read the instructions. Please tell me about your research goals."
+1.  Check if a folder named "Research Hub" exists in this directory.
+2.  If NO, run: `git clone https://github.com/Prophet60191/Research-hub "Research Hub"`
+3.  If YES, stop and say: "Research Hub is already installed."
+4.  Once the folder `Research Hub` exists, list its contents to confirm installation.
 ```
 
-What Happens Next?
-The AI will clone your GitHub repo into the folder.
-It will ask you which template you want.
-It will build the project structure for you.
+🚀 PHASE 2: START A NEW PROJECT
+Use this prompt every time you want to begin a new research assignment.
+Open your Research_Workspace in your AI Editor.
+Paste the GENERATOR PROMPT below:
+🏗️ The Generator Prompt
+
+# PROJECT GENERATOR PROTOCOL
+
+**Role:** Research Architect
+**Context:** The master templates are located in the `Research Hub/Templates/` directory.
+
+**STEP 1: MENU SELECTION**
+1.  Scan `Research Hub/Templates/` and list the available research types.
+    * *Dataset Analysis* (for Data/Python)
+    * *Argument Map* (for Logic/Evidence)
+2.  Ask me: "Which template do you need, and what shall we name the project?"
+
+**STEP 2: SCAFFOLDING**
+Once I answer:
+1.  **COPY** the selected template folder to a NEW folder in the root directory named `[Project Name]`.
+    * *Constraint:* Do NOT modify the original `Research Hub` folder.
+2.  Verify the copy was successful.
+
+**STEP 3: INITIALIZATION**
+1.  Open the `AI_INSTRUCTIONS.md` file inside the NEW project folder.
+2.  **Switch Persona:** Adopt the specific role defined in that file (e.g., Lead Data Scientist or Intelligence Analyst).
+3.  **Execute:** Begin Phase 1 of the instructions found in that file.
+
+Tips for Success
+Always keep your Research_Workspace as the root folder in your editor.
+Never modify the files inside Research Hub directly. If you want to change a template, make a copy first.
